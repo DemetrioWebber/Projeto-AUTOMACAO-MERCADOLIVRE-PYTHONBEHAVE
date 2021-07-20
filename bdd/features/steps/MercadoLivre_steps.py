@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 import time
 
 # ----------------- Steps @scenario.notebook_dell ------------------
-@given(u'que acesse a pagina home')
+@given(u'que esteja a pagina home')
 def acessar_home(context):
     context.mercadolivre.home.acessar_ML(context)
 

@@ -6,7 +6,7 @@ Funcionalidade: Carrinho e Busca no MercadoLivre
     @scenario.notebook_dell
     Cenário: Adicionar Notebook Dell ao carrinho
 
-        Dado que acesse a pagina home
+        Dado que esteja a pagina home
         E que a barra de pesquisa esteja visível
         Quando pesquisar por um Notebook da marca Dell
         E escolher o primeiro Notebook
@@ -15,7 +15,7 @@ Funcionalidade: Carrinho e Busca no MercadoLivre
     @scenario.produto_exemplo
     Esquema do Cenário: Buscar um produto dinâmico
 
-        Dado que acesse a pagina home
+        Dado que esteja a pagina home
         E que a barra de pesquisa esteja visível
         Quando pesquisar por um "<produto>"
         E trazer os resultados
