@@ -1,0 +1,11 @@
+{
+    "Busca1":{
+        "Produto":"Notebook"
+    },
+    "Busca2":{
+        "Produto":"Celular"
+    },
+    "Busca3":{
+        "Produto":"Processador"
+    }
+}

@@ -1,0 +1,3 @@
+Aqui na pasta fixtures colocamos as nossas massas de dados fixas.
+Como por exemplo, logins com senhas especificas que não mudam
+Alguma massa de dados fixa que sempre tem que ser testada, entre outras...
