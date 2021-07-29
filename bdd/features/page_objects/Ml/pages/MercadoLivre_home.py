@@ -27,3 +27,11 @@ class MercadoLivre_home():
 
         input_procurar.send_keys(produto)
         buscar.click()
+    
+    def procurar_produtos_arquivo(self, context, produtos):
+        context.items_validados = list()
+        for item in produtos:
+            self.procurar_produto(context, item)
+            validado = self.page_helper.validar_elemento_por_texto(context, item)
+            context.items_validados.append(validado)
+            self.acessar_ML(context)

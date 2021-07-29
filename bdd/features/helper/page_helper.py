@@ -18,5 +18,6 @@ class Page_Helper():
     def validar_elemento_por_texto(self, context, texto):
         try:
             context.browser.find_element_by_xpath("//*[contains(text(), '{}')]".format(texto))
+            return True
         except:
-            assert False, ("Impossível validar o elemento "+texto)
+            return "Elemento {} não encontrado".format(texto)

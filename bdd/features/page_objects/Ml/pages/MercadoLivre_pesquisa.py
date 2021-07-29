@@ -31,3 +31,8 @@ class MercadoLivre_pesquisa():
             lista = context.browser.find_elements(*self.LISTA_PESQUISA)
         except:
             assert False, "Produtos não encontrados"
+    
+    def validar_lista_pesquisada(self, context, lista):
+        for item in lista:
+            if item != True:
+                assert False, item

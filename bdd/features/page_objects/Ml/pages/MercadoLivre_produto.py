@@ -14,8 +14,10 @@ class MercadoLivre_produto():
         botao_aceitar_cookie.click()
         botao_carrinho.click()
     
-    def validar_tentativa_adicionar_carrinho(self, context):
+    def validar_tela_do_produto(self, context):
         try:
-            context.browser.find_element_by_xpath("//*[contains(text(), 'Olá! Para adicionar ao carrinho, acesse a sua conta')]")
+            context.browser.find_element_by_xpath("//*[contains(text(), 'Voltar à lista')]")
         except:
-            assert False, "Erro ao adicionar produto ao carrinho"
+            assert False, "Erro ao acessar página do produto!"
+
+    
