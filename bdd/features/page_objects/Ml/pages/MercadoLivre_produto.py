@@ -1,10 +1,11 @@
 import selenium.webdriver as webdriver
 from selenium.webdriver.common.by import By
+import time
 
 class MercadoLivre_produto():
 
     def __init__(self, context):
-        self.BTN_ACEITAR_COOKIE          =  (By.ID, 'cookieDisclaimerButton')
+        self.BTN_ACEITAR_COOKIE          =  (By.ID, 'newCookieDisclaimerButton')
         self.BTN_ADD_CARRINHO            =  (By.XPATH, '//button[contains(@formaction, "https://www.mercadolivre.com.br/gz/cart/item/add")]')
 
     def adicionar_carrinho(self, context):

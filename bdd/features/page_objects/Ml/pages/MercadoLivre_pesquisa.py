@@ -27,8 +27,7 @@ class MercadoLivre_pesquisa():
         self.page_helper.validar_elemento_por_texto(context, palavra)
 
     def validar_lista_produtos(self, context):
-        lista = context.browser.find_elements(*self.LISTA_PESQUISA)
-        if lista == True:
-            assert True, "Lista de pesquisa apareceu"
-        else:
-            assert False, "Lista de pesquisa não encontrada"
+        try:
+            lista = context.browser.find_elements(*self.LISTA_PESQUISA)
+        except:
+            assert False, "Produtos não encontrados"
